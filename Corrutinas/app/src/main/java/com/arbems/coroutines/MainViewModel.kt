@@ -22,12 +22,8 @@ class MainViewModel(var ioDispatcher: CoroutineDispatcher = Dispatchers.IO) : Vi
             }
 
             when (result) {
-                is Result.Success<*> -> {
-                    _loginResult.value = true
-                }
-                is Result.Error -> {
-                    _loginResult.value = false
-                }
+                is Result.Success<*> -> _loginResult.value = true
+                is Result.Error -> _loginResult.value = false
             }
 
         }
