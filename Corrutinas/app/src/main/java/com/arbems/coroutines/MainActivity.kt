@@ -1,10 +1,9 @@
-package com.arbems.coroutineswithlivedata
+package com.arbems.coroutines
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import kotlin.coroutines.ContinuationInterceptor
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button.setOnClickListener {
-            viewModel.onSubmitClicked(editTextUserName.text.toString(), editTextPassword.text.toString())
+            viewModel.login(editTextUserName.text.toString(), editTextPassword.text.toString())
         }
 
 

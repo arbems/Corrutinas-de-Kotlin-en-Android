@@ -1,14 +1,11 @@
-package com.arbems.coroutineswithlivedata
+package com.arbems.coroutines
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.*
-import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -36,7 +33,7 @@ class MainViewModelTest {
 
             viewModel.loginResult.observeForever(observer)
 
-            viewModel.onSubmitClicked("alberto", "123456")
+            viewModel.login("alberto", "123456")
 
             verify(observer).onChanged(true)
         }
@@ -49,7 +46,7 @@ class MainViewModelTest {
 
             viewModel.loginResult.observeForever(observer)
 
-            viewModel.onSubmitClicked("", "123456")
+            viewModel.login("", "123456")
 
             verify(observer).onChanged(false)
         }

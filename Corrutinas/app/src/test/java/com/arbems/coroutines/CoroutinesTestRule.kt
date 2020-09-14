@@ -1,4 +1,4 @@
-package com.arbems.coroutineswithlivedata
+package com.arbems.coroutines
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
