@@ -1,8 +1,11 @@
-# Android con kotlin - Corrutinas de Kotlin en Android
+# Android con Kotlin - Corrutinas de Kotlin en Android
+
+[Corrutinas]()
+
 
 # Documentación:
 
-Las **corrutinas** de Kotlin proporcionan una API que te permite escribir código asíncrono. Puedes definir un **CoroutineScope**, lo que te ayuda a administrar cuándo deben ejecutarse las corrutinas. Cada operación asíncrona se ejecuta dentro de un alcance particular.
+Una corrutina es un patrón de diseño de simultaneidad que puedes usar en Android para simplificar el código que se ejecuta de forma asíncrona.
 
 En Android, las corrutinas ayudan a administrar tareas de larga duración que, de lo contrario, podrían bloquear el hilo principal y hacer que una app dejara de responder.
 
@@ -260,6 +263,8 @@ Esta función de suspensión es cancelable. Si el trabajo de la corrutina actual
 
 #### 4.1.1. delay vs Thread.Sleep
 
+La función `sleep` bloquea el hilo. La función `delay`, por el contrario, sí utiliza el modificador **suspend**, por lo que una llamada a esta función suspende el hilo.
+
 `delay()` es como un `Thread.sleep()`, pero mejor: no bloquea un hilo, solo suspende la corrutina en sí.
 
 ```kotlin
@@ -300,11 +305,15 @@ fun main() = runBlocking {
 } // print: Processed in 16028 ms
 ```
 
+#### 4.1.2. Bloquear o suspender hilo
+
+Bloquear un hilo significa que el hilo se mantendrá fuera de uso mientras este encuentre algo que lo bloquee. 
+Por el contrario, suspender un hilo significa que el hilo estará libre y listo para ser usado en la ejecución de otras tareas mientras se encuentra a la espera de la liberación de un recurso.
+
 
 ### 4.2. withContext
 
 Llama al bloque de suspensión especificado con un contexto de rutina determinado, lo suspende hasta que se completa y devuelve el resultado.
-
 
 
 
