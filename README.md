@@ -19,7 +19,7 @@ Las corrutinas son la solución recomendada para la **programación asíncrona e
 Desde el punto de vista del rendimiento, las coroutines permiten la ejecución de miles y hasta millones de hilos concurrentemente con un uso de recursos eficiente haciendo más robusta la aplicación al ser más difícil de alcanzar un error que indique falta de memoria.
 
 
-![scheme coroutines kotlin](https://raw.githubusercontent.com/arbems/Android-with-Kotlin-Architecture-Components/master/Corrutinas%20kotlin%20con%20componentes%20de%20la%20arquitectura/0001.png)
+![scheme coroutines kotlin](https://raw.githubusercontent.com/arbems/Corrutinas-de-Kotlin-en-Android/master/0001.png)
 
 # 1. Coroutine Context
 
