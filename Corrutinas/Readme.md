@@ -6,6 +6,10 @@
 * Uso de corrutinas para la seguridad del hilo principal
 * Control de excepciones
 
+## Enlaces
+
+[Ver más en Developer Monkey](https://developermonkey.es/corrutinas-de-kotlin-en-android/)
+
 # Documentación
 
 Cuando haces una solicitud de red en el hilo principal, este espera o se bloquea hasta que recibe una respuesta.
@@ -42,7 +46,6 @@ La app llama a la función `login()` desde la capa *View* del hilo principal.
 `launch` crea una nueva corrutina para realizar la solicitud de red en el hilo principal, y la corrutina comienza la ejecución.
 Dentro de la corrutina, la llamada a `validateLogin()` ahora suspende la ejecución de la corrutina hasta que el bloque *withContext* de `validateLogin()` termina de ejecutarse.
 Una vez que finaliza el bloque `withContext`, la corrutina de `login()` reanuda la ejecución en el hilo principal con el resultado de la solicitud de red.
-
 
 ## Attribution
 
