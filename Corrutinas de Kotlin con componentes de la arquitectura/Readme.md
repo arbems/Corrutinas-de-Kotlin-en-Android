@@ -2,11 +2,9 @@
 
 Código de ejemplo que muestra las siguientes características de **Corrutinas con componentes de la arquitectura**:
 
-#### [ViewModelScope]()
-
-#### [LifecycleScope]()
-
-#### [Suspender corrutinas]()
+* Uso de **ViewModelScope**
+* Uso de **LifecycleScope**
+* Suspender corrutinas
 
 ## Enlaces
 
