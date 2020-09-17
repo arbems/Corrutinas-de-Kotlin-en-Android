@@ -1,7 +1,10 @@
 # Android con Kotlin - Corrutinas de Kotlin en Android
 
-Código de ejemplo que muestra Corrutinas de Kotlin en Android
+[Corrutinas]()
 
+[Corrutinas kotlin con componentes de la arquitectura]()
+
+[Corrutinas con LiveData]()
 
 ## Attribution
 
