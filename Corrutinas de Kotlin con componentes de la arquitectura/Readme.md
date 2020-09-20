@@ -2,13 +2,14 @@
 
 Código de ejemplo que muestra las siguientes características de **Corrutinas con componentes de la arquitectura**:
 
-* Uso de **ViewModelScope**
-* Uso de **LifecycleScope**
-* Suspender corrutinas
+* Uso de ámbitos de corrutinas optimizados para ciclos de vida
+    * ViewModelScope
+    * LifecycleScope
+* Suspender corrutinas optimizadas para ciclos de vida
 
 ## Enlaces
 
-[Ver más en Developer Monkey](https://developermonkey.es/ambitos-de-coroutines-optimizados-para-ciclos-de-vida/)
+<a href="https://developermonkey.es/corrutinas-de-kotlin-con-componentes-de-la-arquitectura/" target="_blank">Ver más en Developer Monkey</a>
 
 ## Attribution
 

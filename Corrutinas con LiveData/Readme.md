@@ -2,11 +2,11 @@
 
 Código de ejemplo que muestra las siguientes características de **Corrutinas con LiveData**:
 
-* Uso de LiveData con corrutinas
+* Uso de corrutinas con LiveData
 
 ## Enlaces
 
-[Ver más en Developer Monkey](https://developermonkey.es/uso-de-corrutinas-con-livedata/)
+<a href="https://developermonkey.es/uso-de-corrutinas-con-livedata/" target="_blank">Ver más en Developer Monkey</a>
 
 ## Attribution
 

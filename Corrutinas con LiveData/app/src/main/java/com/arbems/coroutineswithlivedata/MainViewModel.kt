@@ -1,22 +1,17 @@
 package com.arbems.coroutineswithlivedata
 
 import androidx.lifecycle.*
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 
 class MainViewModel(var ioDispatcher: CoroutineDispatcher = Dispatchers.IO) : ViewModel() {
 
-    private val _loginResult = MutableLiveData<Boolean>()
-    val loginResult: LiveData<Boolean> get() = _loginResult
-
-    val user: LiveData<Boolean> = liveData {
+    val loginResult: LiveData<Boolean> = liveData {
         val data = loadUser() // loadUser is a suspend function.
         emit(data)
     }
 
-    fun loadUser(): Boolean {
+    private suspend fun loadUser(): Boolean {
+        delay(3000)
         return true
     }
 
